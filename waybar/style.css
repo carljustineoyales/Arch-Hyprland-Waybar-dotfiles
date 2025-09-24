@@ -1,12 +1,16 @@
+/* COLORS */
+@define-color bg-primary rgba(0, 0, 0, 0.7);
+@define-color bg-primary-text #ffffff;
+@define-color border-primary rgba(255, 255, 255, 0.4);
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: transparent;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -94,9 +98,11 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd,
+#language,
 #custom-notification{
     padding: 0 10px;
     color: #ffffff;
+    border-radius: 16px;
 }
 
 #window,
@@ -170,8 +176,8 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: @bg-primary;
+    border: 2px solid @border-primary;
 }
 
 #memory {
@@ -195,13 +201,14 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: @bg-primary;
+    border: 2px solid @border-primary;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #wireplumber {
