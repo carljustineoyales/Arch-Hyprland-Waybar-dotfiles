@@ -4,9 +4,15 @@
 @define-color border-primary rgba(255, 255, 255, 0.4);
 
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.horizontal.modules-left, .horizontal.modules-center, .horizontal.modules-right{
+    background-color: @bg-primary;
+    border-radius: 0 0 8px 8px;
+    padding: 8px 8px;
 }
 
 window#waybar {
@@ -83,9 +89,6 @@ button:hover {
 
 #clock,
 #battery,
-#cpu,
-#memory,
-#disk,
 #temperature,
 #backlight,
 #network,
@@ -120,9 +123,9 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
+/* #clock {
     background-color: #64727D;
-}
+} */
 
 #battery {
     background-color: #ffffff;
@@ -176,16 +179,21 @@ label:focus {
 }
 
 #cpu {
-    background-color: @bg-primary;
-    border: 2px solid @border-primary;
+    background-color: transparent;
+    padding: 0px;
+    min-width: 50px;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: transparent;
+    padding: 0px;
+    min-width: 50px;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: transparent;
+    padding: 0px;
+    min-width: 50px;
 }
 
 #backlight {
@@ -335,5 +343,6 @@ label:focus {
 }
 
 #custom-notification {
-  background-color: #ff0000;
+    color: red;
+    min-width: 40px;
 }
