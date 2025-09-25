@@ -1,0 +1,26 @@
+// -*- mode: jsonc -*-
+{
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 8, // Gaps between modules (4px)
+  "output": "DVI-D-1",
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window",
+    "tray"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/notification","pulseaudio", "network", "custom/power"],
+
+  // Modules configuration
+  "include": ["~/.config/waybar/modules.jsonc"],
+
+
+ 
+
+  
+  
+}
