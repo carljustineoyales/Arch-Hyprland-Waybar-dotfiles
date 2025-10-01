@@ -23,7 +23,7 @@
     /* color: @lavender; */
     border: 0;
     padding: 0 0;
-    font-family: "JetBrainsMono Nerd Font Propo","Fira Sans Semibold", "Font Awesome 7 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font Propo","Material Symbols Outlined","Fira Sans Semibold", "Font Awesome 7 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
 }
 
 window#waybar {
