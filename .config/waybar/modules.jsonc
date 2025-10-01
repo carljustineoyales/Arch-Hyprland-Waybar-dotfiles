@@ -4,7 +4,7 @@
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name}",
+    "format": "{}",
     "format-icons": {
       "urgent": "",
       "active": "",
@@ -13,7 +13,11 @@
   },
   "hyprland/window": {
     "format": "{}",
-    "max-length": 30
+    "max-length": 30,
+    "separate-outputs": true,
+    "rewrite": {
+      "^(null|)$": "" 
+    }
   },
   "tray": {
     "spacing": 8
@@ -56,7 +60,7 @@
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    "format-muted": "muted 󰸈",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
@@ -68,7 +72,8 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
 
   // POWER RELATED
