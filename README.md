@@ -65,3 +65,4 @@ This setup relies on a range of software to create a complete desktop experience
 - [ ] Install and configure a clipboard manager (e.g., `cliphist`)
 - [ ] Unify GTK theming (e.g., with `nwg-look`)
 - [x] Add custom apps button in waybar
+- [ ] Configure fastfetch
