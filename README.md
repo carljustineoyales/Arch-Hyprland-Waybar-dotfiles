@@ -37,13 +37,16 @@ This setup relies on a range of software to create a complete desktop experience
     git clone https://github.com/your-username/dotfiles.git ~/.dotfiles
     ```
 2.  **Create symbolic links:**
+    Before running the commands below, make sure to back up any existing configuration files you may have.
     ```bash
-    ln -s ~/.dotfiles/.config/hypr ~/.config/hypr
-    ln -s ~/.dotfiles/.config/waybar ~/.config/waybar
-    ln -s ~/.dotfiles/.config/rofi ~/.config/rofi
-    ln -s ~/.dotfiles/.config/kitty ~/.config/kitty
-    ln -s ~/.dotfiles/.config/btop ~/.config/btop
-    ln -s ~/.dotfiles/.config/swaync ~/.config/swaync
+    mkdir -p ~/.config
+    ln -sf ~/.dotfiles/hypr ~/.config/hypr
+    ln -sf ~/.dotfiles/waybar ~/.config/waybar
+    ln -sf ~/.dotfiles/rofi ~/.config/rofi
+    ln -sf ~/.dotfiles/kitty ~/.config/kitty
+    ln -sf ~/.dotfiles/btop ~/.config/btop
+    ln -sf ~/.dotfiles/swaync ~/.config/swaync
+    ln -sf ~/.dotfiles/wlogout ~/.config/wlogout
     ```
 3.  **Reload your window manager:**
     Restart Hyprland to apply the changes.
@@ -61,3 +64,4 @@ This setup relies on a range of software to create a complete desktop experience
 - [ ] Configure `hyprpicker` (already installed)
 - [ ] Install and configure a clipboard manager (e.g., `cliphist`)
 - [ ] Unify GTK theming (e.g., with `nwg-look`)
+- [x] Add custom apps button in waybar
