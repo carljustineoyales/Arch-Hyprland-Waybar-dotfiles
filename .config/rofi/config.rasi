@@ -7,9 +7,9 @@
 
 /* global settings and color variables */
 * {
-   maincolor:        #ed8712;
-   highlight:        bold #ed8712;
-   urgentcolor:      #e53714;
+   maincolor:        #ad1d1d;
+   highlight:        bold #ad1d1d;
+   urgentcolor:      #ad1d1d;
 
    fgwhite:          #cfcfcf;
    blackdarkest:     #1d1d1d;
@@ -18,7 +18,7 @@
    blackselect:      #303030;
    darkgray:         #848484;
    scrollbarcolor:   #505050; 
-   font: "DejaVu Sans Mono Regular 14";
+   font: "JetBrainsMono Nerd Font Propo","DejaVu Sans Mono Regular 14";
    background-color: @blackdarkest;
 }
 
@@ -121,7 +121,7 @@ button {
 }
 
 button selected {
-    text-color:       @maincolor;
+    text-color:       @fgwhite;
 }
 
 inputbar {

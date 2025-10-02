@@ -28,7 +28,7 @@
     "interval": 1,
     "timezone": "Asia/Manila",
     "format": "{:%I:%M:%S %p | %B %d, %Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
     // "format-alt": "{:%B %d, %Y}"
   },
 
