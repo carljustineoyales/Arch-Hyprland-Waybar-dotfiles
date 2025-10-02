@@ -1,7 +1,4 @@
 {
-  // TODO: custom script for detecting updates for arch
-  // TODO: add wlockout
-  // TODO: add system monitoring group (disk space / cpu usage / memory usage)
 
   "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
