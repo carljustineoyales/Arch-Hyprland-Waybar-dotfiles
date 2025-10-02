@@ -1,4 +1,4 @@
-# My Dotfiles
+# DEVNEKO
 
 These are my personal dotfiles for my Linux setup. They configure various applications to create a consistent and personalized environment.
 
