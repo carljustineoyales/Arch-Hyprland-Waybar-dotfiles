@@ -87,7 +87,7 @@ element selected.urgent {
 
 element selected.active {
     background-color: @maincolor;
-    text-color:       @blackdarkest;
+    text-color:       @fgwhite;
 }
 
 element alternate.normal {
@@ -132,7 +132,7 @@ inputbar {
 prompt {
    padding:6px 9px;
    background-color: @maincolor;
-   text-color:@blackwidget;
+   text-color:@fgwhite;
 }
 
 entry {
