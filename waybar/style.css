@@ -13,24 +13,13 @@
   font-size: 14px;
 }
 
-/*
- * Global variables
- */
-@define-color primary #222222;
-@define-color secondary #e9e9e9;
-@define-color tertiary #4e4e4e;
-@define-color background rgba(34, 34, 34, 0.8);
-@define-color borderColor #a7a7a7;
-@define-color urgent #ad1d1d;
-@define-color urgentHover #ff0000;
-@define-color moduleBg #3e3e3e;
-@define-color textColor #dedede;
+@import "color.css";
 
 /*
  * WAYBAR
  */
 window#waybar {
-  /* background-color: @background; */
+  /* background-color: @backgroundTransparent; */
   background-color: transparent;
   border-radius: 0.6em;
 }
@@ -68,16 +57,16 @@ window#waybar.empty #window {
 #network,
 #tray,
 #workspaces button {
-  background: @moduleBg;
-  color: @textColor;
-  border: 1px solid @tertiary;
+  background: @gray800;
+  color: @gray200;
+  border: 1px solid @gray700;
 }
 
 #custom-notification:hover,
 #pulseaudio:hover,
 #network:hover,
 #workspaces button:hover {
-  border-color: @borderColor;
+  border-color: @gray400;
 }
 
 /*
@@ -88,56 +77,56 @@ window#waybar.empty #window {
 }
 
 #workspaces button.active {
-  border-color: @borderColor;
+  border-color: @gray400;
 }
 
 #workspaces button.urgent {
-  background: @urgent;
-  border-color: @urgent;
+  background: @red700;
+  border-color: @red700;
 }
 
 /*
  * Hyprland Window
  */
 #window {
-  color: @primary;
-  background: @secondary;
+  color: @gray900;
+  background: @gray100;
 }
 
 /*
  * Custom Notification
  */
 #custom-notification.notification {
-  background: @urgent;
-  border-color: @urgent;
+  background: @red700;
+  border-color: @red700;
 }
 
 /*
  * Pulseaudio
  */
 #pulseaudio.muted {
-  background: @urgent;
-  border-color: @urgent;
+  background: @red700;
+  border-color: @red700;
 }
 
 /*
  * Custom Power
  */
 #custom-power {
-  background: @urgent;
-  color: @textColor;
+  background: @red700;
+  color: @gray200;
 }
 
 #custom-power:hover {
-  background: @urgentHover;
+  background: @red500;
 }
 
 /*
  * Clock
  */
 #clock {
-  background: @primary;
-  color: @textColor;
+  background: @gray900;
+  color: @gray200;
   border: 1px solid transparent;
 }
 
@@ -145,12 +134,12 @@ window#waybar.empty #window {
  * Tooltip
  */
 tooltip {
-  background: @moduleBg;
-  border: 1px solid @tertiary;
+  background: @gray800;
+  border: 1px solid @gray700;
   border-radius: 0.4em;
   padding: 0.5em 1em;
 }
 
 tooltip label {
-  color: @textColor;
+  color: @gray200;
 }
