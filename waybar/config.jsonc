@@ -4,15 +4,19 @@
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   // "height": 100, // Waybar height (to be removed for auto height)
   "spacing": 4, // Gaps between modules (4px)
-  "margin": 4,
+  "margin-top": 8,
+  "margin-right": 16,
+  "margin-bottom": 0,
+  "margin-left": 16,
   // Choose the order of the modules
   "modules-left": [
+    "custom/apps",
     "hyprland/workspaces",
     "hyprland/window",
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "tray","custom/notification","pulseaudio", "network", "custom/power"],
+    "custom/pacman","tray","custom/notification","pulseaudio", "network","custom/power"],
 
   // Modules configuration
   "include": ["~/.config/waybar/modules.jsonc"]

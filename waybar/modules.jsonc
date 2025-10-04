@@ -16,7 +16,7 @@
     "max-length": 30,
     "separate-outputs": true,
     "rewrite": {
-      "^(null|)$": "" 
+      "^(null|)$": ""
     }
   },
   "tray": {
@@ -27,9 +27,20 @@
   "clock": {
     "interval": 1,
     "timezone": "Asia/Manila",
-    "format": "{:%I:%M:%S %p | %B %d, %Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+    "format": "{:%I:%M:%S %p |  %a, %B %d, %Y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
     // "format-alt": "{:%B %d, %Y}"
+    "calendar": {
+      "mode": "month",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    }
   },
 
   // System monitoring
@@ -37,13 +48,16 @@
     "format": "{usage}% ",
     "tooltip": false
   },
+
   "memory": {
     "format": "{}%  "
   },
+
   "disk": {
     "format": "{percentage_used}%  ",
     "unit": "GB"
   },
+
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -117,49 +131,40 @@
     "escape": true
   },
 
-  // MISC
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "unknown-tag": "N/A",
-    "interval": 5,
-    "consume-icons": {
-      "on": " "
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
+  // Apps
+  "custom/apps": {
+    "format": "",
+    "on-click": "rofi -show drun -show-icons"
   },
 
+  // Keyboard
   "keyboard-state": {
-    "numlock": true,
+    "numlock": false,
     "capslock": true,
-    "format": "{name} {icon}",
+    "format": {
+      "numlock": " | 󰎠 {icon}",
+      "capslock": "󰬴 {icon}"
+    },
     "format-icons": {
       "locked": "",
       "unlocked": ""
     }
   },
 
+  // Enable/disable idle
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": "",
       "deactivated": ""
     }
+  },
+
+  // custom pacman
+  "custom/pacman":{
+    "format": "󰅢 {}",
+    "interval": 3600,
+    "exec": "~/.config/waybar/scripts/updates.sh",
+    "return-type": "json"
   }
 }

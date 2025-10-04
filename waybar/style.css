@@ -30,11 +30,11 @@ window#waybar.empty #window {
   transition: all 0.3s ease;
 }
 
-.modules-right,
+/* .modules-right,
 .modules-center,
 .modules-left {
   padding: 0.5em;
-}
+} */
 
 /*
  * Global module layout
@@ -46,7 +46,10 @@ window#waybar.empty #window {
 #clock,
 #window,
 #tray,
-#workspaces button {
+#workspaces button,
+#custom-apps,
+#keyboard-state,
+#custom-pacman {
   padding: 0.5em 1em;
   border-radius: 0.4em;
   transition: all 0.3s ease;
@@ -56,7 +59,9 @@ window#waybar.empty #window {
 #pulseaudio,
 #network,
 #tray,
-#workspaces button {
+#workspaces button,
+#custom-apps,
+#keyboard-state {
   background: @gray800;
   color: @gray200;
   border: 1px solid @gray700;
@@ -65,7 +70,8 @@ window#waybar.empty #window {
 #custom-notification:hover,
 #pulseaudio:hover,
 #network:hover,
-#workspaces button:hover {
+#workspaces button:hover,
+#custom-apps:hover {
   border-color: @gray400;
 }
 
@@ -130,6 +136,17 @@ window#waybar.empty #window {
   border: 1px solid transparent;
 }
 
+/* Keyboard */
+#keyboard-state{
+  margin: 0 0.2em;
+  color: @gray900;
+  background: @gray100;
+}
+
+/* Custom Pacman */
+#custom-pacman{
+  background: gray
+}
 /*
  * Tooltip
  */
