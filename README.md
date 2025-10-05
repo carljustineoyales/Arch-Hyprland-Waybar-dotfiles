@@ -6,35 +6,19 @@ These are my personal dotfiles for my Linux setup. They configure various applic
 
 This setup relies on a range of software to create a complete desktop experience.
 
-### Core Components
-*   **Window Manager:** [Hyprland](https://hyprland.org/)
-*   **Authentication Agent:** [Polkit KDE Agent](https://archlinux.org/packages/extra/x86_64/polkit-kde-agent/)
-
-### User Interface
-*   **Status Bar:** [Waybar](https://github.com/Alexays/Waybar)
-*   **Application Launcher:** [Rofi](https://github.com/davatorium/rofi) (Wayland fork)
-*   **Notification Daemon:** [swaync](https://github.com/ErikReider/swaync)
-*   **Lock Screen:** [hyprlock](https://wiki.hyprland.org/Ecosystem/hyprlock/)
-*   **Logout Menu:** [wlogout](https://github.com/ArtsyMacaw/wlogout)
-*   **Wallpaper Utility:** [hyprpaper](https://wiki.hyprland.org/Ecosystem/hyprpaper/)
-
-### Applications
-*   **Terminal Emulator:** [Kitty](https://sw.kovidgoyal.net/kitty/)
-*   **File Manager:** [Nautilus](https://wiki.gnome.org/Apps/Files)
-*   **System Monitor:** [btop](https://github.com/aristocratos/btop)
-
-### Utilities
-*   **Screenshot Tool:** [hyprshot](https://github.com/Gustash/hyprshot)
-*   **Audio Control:** [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) & `playerctl`
-*   **Brightness Control:** `brightnessctl`
-*   **Network Manager:** [NetworkManager Applet](https://wiki.gnome.org/Projects/NetworkManager)
-*   **Fonts:** A [Nerd Font](https://www.nerdfonts.com/) is recommended for proper icon display in Waybar.
+| Category          | Software                                                                                                                                            |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Core**          | [Hyprland](https://hyprland.org/), [Polkit KDE Agent](https://archlinux.org/packages/extra/x86_64/polkit-kde-agent/)                                    |
+| **User Interface**| [Waybar](https://github.com/Alexays/Waybar), [Rofi](https://github.com/davatorium/rofi), [swaync](https://github.com/ErikReider/swaync), [hyprlock](https://wiki.hyprland.org/Ecosystem/hyprlock/), [wlogout](https://github.com/ArtsyMacaw/wlogout), [hyprpaper](https://wiki.hyprland.org/Ecosystem/hyprpaper/) |
+| **Applications**  | [Kitty](https://sw.kovidgoyal.net/kitty/), [Nautilus](https://wiki.gnome.org/Apps/Files), [btop](https://github.com/aristocratos/btop)                  |
+| **Utilities**     | [fastfetch](https://github.com/fastfetch-cli/fastfetch), [starship](https://starship.rs/), [hyprshot](https://github.com/Gustash/hyprshot), [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) & `playerctl`, `brightnessctl`, [NetworkManager Applet](https://wiki.gnome.org/Projects/NetworkManager) |
+| **Fonts**         | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)                                                                                  |
 
 ## Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/dotfiles.git ~/.dotfiles
+    git clone https://github.com/carljustineoyales/Arch-Hyprland-Waybar-dotfiles
     ```
 2.  **Create symbolic links:**
     Before running the commands below, make sure to back up any existing configuration files you may have.
@@ -47,6 +31,8 @@ This setup relies on a range of software to create a complete desktop experience
     ln -sf ~/.dotfiles/btop ~/.config/btop
     ln -sf ~/.dotfiles/swaync ~/.config/swaync
     ln -sf ~/.dotfiles/wlogout ~/.config/wlogout
+    ln -sf ~/.dotfiles/fastfetch ~/.config/fastfetch
+    ln -sf ~/.dotfiles/starship ~/.config/starship
     ```
 3.  **Reload your window manager:**
     Restart Hyprland to apply the changes.

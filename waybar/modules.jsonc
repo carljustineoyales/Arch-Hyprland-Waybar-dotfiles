@@ -161,13 +161,13 @@
   },
 
   // custom pacman
-  "custom/pacman": {
-    "format": "󰅢 {}",
-    "exec": "~/.config/waybar/scripts/get_updates.sh",
-    "return-type": "json",
-    "restart-interval": 2,
-    // "interval":1,
-    "signal": 1,
-    "on-click": "~/.config/waybar/scripts/install_updates.sh"
-  },
+  // "custom/pacman": {
+  //   "format": "󰅢 {}",
+  //   "exec": "~/.config/waybar/scripts/get_updates.sh",
+  //   "return-type": "json",
+  //   "restart-interval": 2,
+  //   // "interval":1,
+  //   "signal": 1,
+  //   "on-click": "~/.config/waybar/scripts/install_updates.sh"
+  // },
 }
