@@ -53,16 +53,3 @@ This setup relies on a range of software to create a complete desktop experience
 
 **Note:** You may need to adjust the paths in the configuration files to match your system.
 
-## Todo
-
-- [ ] Install a Nerd Font
-- [ ] Create a wallpaper management script
-- [ ] Explore `eww` or `ags` for advanced widgets
-- [ ] Improve dotfiles management with `stow` or a bare Git repository
-- [ ] Add screenshots to the README
-- [x] Add lockscreen
-- [ ] Configure `hyprpicker` (already installed)
-- [ ] Install and configure a clipboard manager (e.g., `cliphist`)
-- [ ] Unify GTK theming (e.g., with `nwg-look`)
-- [x] Add custom apps button in waybar
-- [ ] Configure fastfetch

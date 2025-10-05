@@ -3,6 +3,7 @@
   "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   // "height": 100, // Waybar height (to be removed for auto height)
+  "output": "HDMI-A-1",
   "spacing": 4, // Gaps between modules (4px)
   "margin-top": 8,
   "margin-right": 16,
@@ -16,7 +17,7 @@
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "custom/pacman","tray","custom/notification","pulseaudio", "network","custom/power"],
+   "custom/pacman","tray","custom/notification","pulseaudio", "network","custom/power"],
 
   // Modules configuration
   "include": ["~/.config/waybar/modules.jsonc"]
