@@ -20,7 +20,7 @@ To install these dotfiles, follow these steps:
 
 1.  First, ensure all necessary dependencies are installed on your system. For Arch Linux, you can install many of them with:
     ```bash
-    yay -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship hyprshot pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd
+    sudo pacman -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship hyprshot pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd
     ```
     You may also need additional packages depending on your specific setup, or some package names might differ slightly.
 2.  Clone this repository:
@@ -37,16 +37,43 @@ To install these dotfiles, follow these steps:
     mkdir -p ~/.config
 
     # Create symlinks for each configuration directory
-    ln -s "$PWD/btop" "$HOME/.config/btop"
-    ln -s "$PWD/fastfetch" "$HOME/.config/fastfetch"
-    ln -s "$PWD/hypr" "$HOME/.config/hypr"
-    ln -s "$PWD/kitty" "$HOME/.config/kitty"
-    ln -s "$PWD/rofi" "$HOME/.config/rofi"
-    ln -s "$PWD/starship" "$HOME/.config/starship"
-    ln -s "$PWD/swaync" "$HOME/.config/swaync"
-    ln -s "$PWD/waybar" "$HOME/.config/waybar"
-    ln -s "$PWD/wlogout" "$HOME/.config/wlogout"
+    ln -sf "$PWD/btop" "$HOME/.config/btop"
+    ln -sf "$PWD/fastfetch" "$HOME/.config/fastfetch"
+    ln -sf "$PWD/hypr" "$HOME/.config/hypr"
+    ln -sf "$PWD/kitty" "$HOME/.config/kitty"
+    ln -sf "$PWD/rofi" "$HOME/.config/rofi"
+    ln -sf "$PWD/starship" "$HOME/.config/starship"
+    ln -sf "$PWD/swaync" "$HOME/.config/swaync"
+    ln -sf "$PWD/waybar" "$HOME/.config/waybar"
+    ln -sf "$PWD/wlogout" "$HOME/.config/wlogout"
     ```
 
 **Note:** You may need to adjust the paths in the configuration files to match your system.
 
+## Color Palette
+
+Here's the color palette used in the Waybar configuration:
+
+| Name                  | Hex Value |
+| --------------------- | --------- |
+| `@define-color gray50`  | `#f5f5f5` |
+| `@define-color gray100` | `#e9e9e9` |
+| `@define-color gray200` | `#dedede` |
+| `@define-color gray300` | `#bebebe` |
+| `@define-color gray400` | `#a7a7a7` |
+| `@define-color gray500` | `#828282` |
+| `@define-color gray600` | `#5a5a5a` |
+| `@define-color gray700` | `#4e4e4e` |
+| `@define-color gray800` | `#3e3e3e` |
+| `@define-color gray900` | `#222222` |
+| `@define-color red50`   | `#fef2f2` |
+| `@define-color red100`  | `#fee2e2` |
+| `@define-color red200`  | `#fecaca` |
+| `@define-color red300`  | `#fca5a5` |
+| `@define-color red400`  | `#f87171` |
+| `@define-color red500`  | `#ff0000` |
+| `@define-color red600`  | `#d60f0f` |
+| `@define-color red700`  | `#ad1d1d` |
+| `@define-color red800`  | `#991b1b` |
+| `@define-color red900`  | `#7f1d1d` |
+| `@define-color backgroundTransparent` | `rgba(34, 34, 34, 0.8)` |
