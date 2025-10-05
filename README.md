@@ -37,15 +37,15 @@ To install these dotfiles, follow these steps:
     mkdir -p ~/.config
 
     # Create symlinks for each configuration directory
-    ln -sf "$PWD/btop" "$HOME/.config/btop"
-    ln -sf "$PWD/fastfetch" "$HOME/.config/fastfetch"
-    ln -sf "$PWD/hypr" "$HOME/.config/hypr"
-    ln -sf "$PWD/kitty" "$HOME/.config/kitty"
-    ln -sf "$PWD/rofi" "$HOME/.config/rofi"
-    ln -sf "$PWD/starship" "$HOME/.config/starship"
-    ln -sf "$PWD/swaync" "$HOME/.config/swaync"
-    ln -sf "$PWD/waybar" "$HOME/.config/waybar"
-    ln -sf "$PWD/wlogout" "$HOME/.config/wlogout"
+    ln -s "$PWD/btop" "$HOME/.config/btop"
+    ln -s "$PWD/fastfetch" "$HOME/.config/fastfetch"
+    ln -s "$PWD/hypr" "$HOME/.config/hypr"
+    ln -s "$PWD/kitty" "$HOME/.config/kitty"
+    ln -s "$PWD/rofi" "$HOME/.config/rofi"
+    ln -s "$PWD/starship" "$HOME/.config/starship"
+    ln -s "$PWD/swaync" "$HOME/.config/swaync"
+    ln -s "$PWD/waybar" "$HOME/.config/waybar"
+    ln -s "$PWD/wlogout" "$HOME/.config/wlogout"
     ```
 
 **Note:** You may need to adjust the paths in the configuration files to match your system.
