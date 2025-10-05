@@ -16,26 +16,37 @@ This setup relies on a range of software to create a complete desktop experience
 
 ## Installation
 
-1.  **Clone the repository:**
+To install these dotfiles, follow these steps:
+
+1.  First, ensure all necessary dependencies are installed on your system. For Arch Linux, you can install many of them with:
     ```bash
-    git clone https://github.com/carljustineoyales/Arch-Hyprland-Waybar-dotfiles
+    sudo pacman -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship hyprshot pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd
     ```
-2.  **Create symbolic links:**
-    Before running the commands below, make sure to back up any existing configuration files you may have.
+    You may also need additional packages depending on your specific setup, or some package names might differ slightly.
+2.  Clone this repository:
     ```bash
+    git clone https://github.com/cjoyales/dotfiles.git ~/.dotfiles
+    ```
+3.  Navigate into the cloned directory:
+    ```bash
+    cd ~/.dotfiles
+    ```
+4.  Create symlinks for the configuration directories:
+    ```bash
+    # Ensure the ~/.config directory exists
     mkdir -p ~/.config
-    ln -s ~/dotfiles/hypr ~/.config/hypr
-    ln -s ~/dotfiles/waybar ~/.config/waybar
-    ln -s ~/dotfiles/rofi ~/.config/rofi
-    ln -s ~/dotfiles/kitty ~/.config/kitty
-    ln -s ~/dotfiles/btop ~/.config/btop
-    ln -s ~/dotfiles/swaync ~/.config/swaync
-    ln -s ~/dotfiles/wlogout ~/.config/wlogout
-    ln -s ~/dotfiles/fastfetch ~/.config/fastfetch
-    ln -s ~/dotfiles/starship ~/.config/starship
+
+    # Create symlinks for each configuration directory
+    ln -sf "$PWD/btop" "$HOME/.config/btop"
+    ln -sf "$PWD/fastfetch" "$HOME/.config/fastfetch"
+    ln -sf "$PWD/hypr" "$HOME/.config/hypr"
+    ln -sf "$PWD/kitty" "$HOME/.config/kitty"
+    ln -sf "$PWD/rofi" "$HOME/.config/rofi"
+    ln -sf "$PWD/starship" "$HOME/.config/starship"
+    ln -sf "$PWD/swaync" "$HOME/.config/swaync"
+    ln -sf "$PWD/waybar" "$HOME/.config/waybar"
+    ln -sf "$PWD/wlogout" "$HOME/.config/wlogout"
     ```
-3.  **Reload your window manager:**
-    Restart Hyprland to apply the changes.
 
 **Note:** You may need to adjust the paths in the configuration files to match your system.
 
