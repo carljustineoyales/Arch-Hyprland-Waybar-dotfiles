@@ -24,15 +24,15 @@ This setup relies on a range of software to create a complete desktop experience
     Before running the commands below, make sure to back up any existing configuration files you may have.
     ```bash
     mkdir -p ~/.config
-    ln -sf ~/dotfiles/hypr ~/.config/hypr
-    ln -sf ~/dotfiles/waybar ~/.config/waybar
-    ln -sf ~/dotfiles/rofi ~/.config/rofi
-    ln -sf ~/dotfiles/kitty ~/.config/kitty
-    ln -sf ~/dotfiles/btop ~/.config/btop
-    ln -sf ~/dotfiles/swaync ~/.config/swaync
-    ln -sf ~/dotfiles/wlogout ~/.config/wlogout
-    ln -sf ~/dotfiles/fastfetch ~/.config/fastfetch
-    ln -sf ~/dotfiles/starship ~/.config/starship
+    ln -s ~/dotfiles/hypr ~/.config/hypr
+    ln -s ~/dotfiles/waybar ~/.config/waybar
+    ln -s ~/dotfiles/rofi ~/.config/rofi
+    ln -s ~/dotfiles/kitty ~/.config/kitty
+    ln -s ~/dotfiles/btop ~/.config/btop
+    ln -s ~/dotfiles/swaync ~/.config/swaync
+    ln -s ~/dotfiles/wlogout ~/.config/wlogout
+    ln -s ~/dotfiles/fastfetch ~/.config/fastfetch
+    ln -s ~/dotfiles/starship ~/.config/starship
     ```
 3.  **Reload your window manager:**
     Restart Hyprland to apply the changes.
