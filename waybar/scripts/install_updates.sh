@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
+date "+Last refreshed: %H:%M:%S"
 
+echo "{\"text\": \"$(date +%S)\"}"
 # Install updates
-kitty -e bash -c "yay -Syu; echo 'Press [ENTER] to close.'; read"
+yay -Syu
+
+# Exit
+echo
+echo "Update Complete! Press [ENTER] to close."
+read -r
 
 # Reload Waybar
-pkill -12 waybar
+pkill -RTMIN+8 waybar
