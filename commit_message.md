@@ -1,5 +1,14 @@
-refactor(repo): Move config files to root and update commit message workflow
+feat(xwayland): Add XWayland fixes for Chromium and VS Code
 
-- Moved `COMMIT_MESSAGE_TEMPLATE.md` and `README.md` from `.config/` to the repository root for better visibility and accessibility.
-- Updated the commit message workflow by introducing a dedicated `commit_message.md` file in the root, which will be used to draft commit messages.
-- Removed the old `.config/commit_message.md` as it is no longer needed.
+This commit introduces `.desktop` files for Chromium and Visual Studio Code
+with specific flags to address common issues when running these applications
+on Hyprland with XWayland.
+
+- For Chromium, the `--disable-features=WaylandWpColorManagerV1` flag is
+  added to prevent crashes when moving the browser between monitors.
+
+- For Visual Studio Code, the `--ozone-platform-hint=auto` flag is added
+  to fix issues with window border rendering.
+
+The main `README.md` has been updated to include a new section that
+explains these fixes and provides instructions on how to apply them.
