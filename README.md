@@ -12,7 +12,7 @@ This setup relies on a range of software to create a complete desktop experience
 | **User Interface**| [Waybar](https://github.com/Alexays/Waybar), [Rofi](https://github.com/davatorium/rofi), [swaync](https://github.com/ErikReider/swaync), [hyprlock](https://wiki.hyprland.org/Ecosystem/hyprlock/), [wlogout](https://github.com/ArtsyMacaw/wlogout), [hyprpaper](https://wiki.hyprland.org/Ecosystem/hyprpaper/) |
 | **Applications**  | [Kitty](https://sw.kovidgoyal.net/kitty/), [Nautilus](https://wiki.gnome.org/Apps/Files), [btop](https://github.com/aristocratos/btop)                  |
 | **Utilities**     | [fastfetch](https://github.com/fastfetch-cli/fastfetch), [starship](https://starship.rs/), [hyprshot](https://github.com/Gustash/hyprshot), [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) & `playerctl`, `brightnessctl`, [NetworkManager Applet](https://wiki.gnome.org/Projects/NetworkManager) |
-| **Fonts**         | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)                                                                                  |
+| **Fonts**         | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads), [Noto-fonts-cjk](https://archlinux.org/packages/extra/any/noto-fonts-cjk/)                                                                                   |
 
 ## Installation
 
@@ -20,16 +20,16 @@ To install these dotfiles, follow these steps:
 
 1.  First, ensure all necessary dependencies are installed on your system. For Arch Linux, you can install many of them with:
     ```bash
-    sudo pacman -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship hyprshot pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd
+    yay -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship hyprshot pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd
     ```
     You may also need additional packages depending on your specific setup, or some package names might differ slightly.
 2.  Clone this repository:
     ```bash
-    git clone https://github.com/cjoyales/dotfiles.git ~/.dotfiles
+    git clone https://github.com/carljustineoyales/Arch-Hyprland-Waybar-dotfiles.git ~/dotfiles
     ```
 3.  Navigate into the cloned directory:
     ```bash
-    cd ~/.dotfiles
+    cd ~/dotfiles
     ```
 4.  Create symlinks for the configuration directories:
     ```bash
