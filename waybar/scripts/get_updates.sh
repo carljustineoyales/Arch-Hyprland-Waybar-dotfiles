@@ -6,7 +6,7 @@ echo '{"text": "Updating"}'
 # get updates
 updates=()
 
-# serialize each packages in the update
+# AUR updates
 while IFS= read -r line; do
   #extract package name, current version, latest version
   pkg=$(echo "$line" | awk '{print $1}')
@@ -16,6 +16,17 @@ while IFS= read -r line; do
   # Store as a string in the array (you can format as you like)
   updates+=("$pkg: $current -> $latest")
 done < <(yay -Qua)
+
+# Pacman updates
+while IFS= read -r line; do
+  #extract package name, current version, latest version
+  pkg=$(echo "$line" | awk '{print $1}')
+  current=$(echo "$line" | awk '{print $2}')
+  latest=$(echo "$line" | awk '{print $4}')
+
+  # Store as a string in the array (you can format as you like)
+  updates+=("$pkg: $current -> $latest")
+done < <(checkupdates)
 
 # Join all updates into a single string for tooltip
 tooltip=""
