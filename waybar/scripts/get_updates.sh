@@ -38,4 +38,4 @@ tooltip=${tooltip%\\n}
 total_updates=${#updates[@]}
 # output total updates
 # printf '{"text" : "%s", "tooltip": "Aur: %s | Pacman: %s", }' "$total_updates" "$update_aur" "$update_pacman" 
-printf '{"text" : "%s", "tooltip": "%s", }' "$total_updates" "$tooltip" 
+echo "{\"text\": \"$total_updates\", \"tooltip\": \"$tooltip\"}"
