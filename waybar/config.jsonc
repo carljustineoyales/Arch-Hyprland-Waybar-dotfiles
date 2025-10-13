@@ -6,9 +6,9 @@
   "output": "DVI-D-1",
   "spacing": 4, // Gaps between modules (4px)
   "margin-top": 8,
-  "margin-right": 16,
+  "margin-right": 8,
   "margin-bottom": 0,
-  "margin-left": 16,
+  "margin-left": 8,
   // Choose the order of the modules
   "modules-left": [
     "custom/apps",
