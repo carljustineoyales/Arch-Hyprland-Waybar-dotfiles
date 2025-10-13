@@ -162,7 +162,7 @@
 
   // custom pacman
   "custom/pacman": {
-    "format": "󰅢 {}",
+    "format": "{} 󰅢",
     "exec": "~/.config/waybar/scripts/get_updates.sh",
     "return-type": "json",
     "restart-interval":60,
