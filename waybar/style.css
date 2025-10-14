@@ -4,16 +4,16 @@
 
 @import "color.css";
 * {
-  min-height: 0;
   border-radius: 0;
   border: 0;
   padding: 0;
   margin: 0;
-
+  
   font-family: "JetBrainsMono Nerd Font Propo", "Material Symbols Outlined",
-    "Fira Sans Semibold", "Font Awesome 7 Free", FontAwesome, Roboto, Helvetica,
-    Arial, sans-serif;
+  "Fira Sans Semibold", "Font Awesome 7 Free", FontAwesome, Roboto, Helvetica,
+  Arial, sans-serif;
   font-size: 12px;
+  min-height: 0;
 }
 
 /*
@@ -29,6 +29,7 @@ window#waybar.empty #window {
   background: transparent;
   padding: 0;
   transition: all 0.3s ease;
+  
 }
 
 /* .modules-right,

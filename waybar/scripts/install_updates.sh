@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 date "+Last refreshed: %H:%M:%S"
-
-echo "{\"text\": \"$(date +%S)\"}"
 # Install updates
 yay -Syu
 
