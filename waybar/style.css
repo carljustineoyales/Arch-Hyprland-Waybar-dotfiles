@@ -51,7 +51,8 @@ window#waybar.empty #window {
 #workspaces button,
 #custom-apps,
 #keyboard-state,
-#custom-pacman {
+#custom-pacman,
+#pulseaudio-slider {
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
   transition: all 0.3s ease;
@@ -63,7 +64,9 @@ window#waybar.empty #window {
 #tray,
 #workspaces button,
 #custom-apps,
-#keyboard-state {
+#keyboard-state,
+#pulseaudio-slider,
+#custom-pacman {
   background: @gray800;
   color: @gray200;
   border: 1px solid @gray700;
@@ -117,6 +120,28 @@ window#waybar.empty #window {
   border-color: @red700;
 }
 
+#pulseaudio-slider slider {
+  min-height: 0rem;
+  min-width: 0rem;
+
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 1rem;
+  min-width: 10rem;
+  border-radius: 5px;
+  background: @gray900;
+}
+
+#pulseaudio-slider highlight {
+  min-width: 1rem;
+  border-radius: 0.2rem;
+  background: @gray100;
+}
+
 /*
  * Custom Power
  */
@@ -139,16 +164,17 @@ window#waybar.empty #window {
 }
 
 /* Keyboard */
-#keyboard-state{
+#keyboard-state {
   margin: 0 0.2rem;
   color: @gray900;
   background: @gray100;
 }
 
 /* Custom Pacman */
-#custom-pacman{
-  background: gray
-}
+/* #custom-pacman {
+  background: @gray900;
+} */
+
 /*
  * Tooltip
  */

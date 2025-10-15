@@ -89,6 +89,11 @@
     "on-click": "pavucontrol",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
   },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
 
   // POWER RELATED
   "power-profiles-daemon": {
@@ -165,16 +170,16 @@
     "format": "{} 󰅢",
     "exec": "~/.config/waybar/scripts/get_updates.sh",
     "return-type": "json",
-    "restart-interval":60,
+    "restart-interval": 60,
     "signal": 8,
     "on-click": "kitty ~/.config/waybar/scripts/install_updates.sh"
   },
 
- "custom/increment": {
-  "format": "🔢 {}",
-  "exec": "~/.config/waybar/scripts/increment.sh",
-  "return-type": "json",
-  "restart-interval":5,
-  "signal": 10
-}
+  "custom/increment": {
+    "format": "🔢 {}",
+    "exec": "~/.config/waybar/scripts/increment.sh",
+    "return-type": "json",
+    "restart-interval": 5,
+    "signal": 10
+  }
 }
