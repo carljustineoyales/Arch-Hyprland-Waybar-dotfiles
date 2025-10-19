@@ -16,7 +16,6 @@
     "tray",
     "custom/notification",
     "pulseaudio",
-    "pulseaudio/slider",
     "network",
     "custom/power"
   ],

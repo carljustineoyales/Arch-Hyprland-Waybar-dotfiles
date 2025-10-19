@@ -19,6 +19,8 @@
       "^(null|)$": ""
     }
   },
+
+  // TRAY
   "tray": {
     "spacing": 8
   },
@@ -73,7 +75,7 @@
     // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-bluetooth-muted": "󰸈 {icon} {format_source}",
     "format-muted": "muted 󰸈",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -95,19 +97,6 @@
     "orientation": "horizontal"
   },
 
-  // POWER RELATED
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
-    }
-  },
-
   "custom/power": {
     "format": "⏻",
     "tooltip": false,
@@ -117,7 +106,7 @@
   // Notifications
   "custom/notification": {
     "tooltip": false,
-    "format": "{0} {icon}",
+    "format": "{icon}",
     "format-icons": {
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
@@ -156,15 +145,6 @@
     }
   },
 
-  // Enable/disable idle
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    }
-  },
-
   // custom pacman
   "custom/pacman": {
     "format": "{} 󰅢",
@@ -173,13 +153,5 @@
     "restart-interval": 60,
     "signal": 8,
     "on-click": "kitty ~/.config/waybar/scripts/install_updates.sh"
-  },
-
-  "custom/increment": {
-    "format": "🔢 {}",
-    "exec": "~/.config/waybar/scripts/increment.sh",
-    "return-type": "json",
-    "restart-interval": 5,
-    "signal": 10
   }
 }
