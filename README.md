@@ -51,26 +51,6 @@ To install these dotfiles, follow these steps:
 
 **Note:** You may need to adjust the paths in the configuration files to match your system.
 
-## XWayland Application Fixes
-
-This repository also includes fixes for common issues with XWayland applications. The `.local/share/applications` directory contains modified `.desktop` files for:
-
-*   **Chromium:** Fixes a crashing issue when moving the browser between monitors.
-*   **Visual Studio Code:** Fixes a window border rendering issue.
-
-To apply these fixes, copy the `.desktop` files to your local applications directory:
-
-```bash
-mkdir -p ~/.local/share/applications
-cp -r ./.local/share/applications/* ~/.local/share/applications/
-```
-
-Then, update the desktop database:
-
-```bash
-update-desktop-database ~/.local/share/applications
-```
-
 ## Color Palette
 
 Here's the color palette used in the Waybar configuration:
