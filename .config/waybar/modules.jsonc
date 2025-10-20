@@ -29,7 +29,7 @@
   "clock": {
     "interval": 1,
     "timezone": "Asia/Manila",
-    "format": "{:%I:%M:%S %p |  %a, %B %d, %Y}",
+    "format": " {:%I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>",
     // "format-alt": "{:%B %d, %Y}"
     "calendar": {
@@ -63,9 +63,9 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "{ifname} (No IP) ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
@@ -75,8 +75,8 @@
     // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": "󰸈 {icon} {format_source}",
-    "format-muted": "muted 󰸈",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "muted ",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
@@ -98,7 +98,7 @@
   },
 
   "custom/power": {
-    "format": "⏻",
+    "format": "",
     "tooltip": false,
     "on-click": "wlogout"
   },
@@ -147,7 +147,7 @@
 
   // custom pacman
   "custom/pacman": {
-    "format": "{} 󰅢",
+    "format": "{} ",
     "exec": "~/.config/waybar/scripts/get_updates.sh",
     "return-type": "json",
     "restart-interval": 60,
