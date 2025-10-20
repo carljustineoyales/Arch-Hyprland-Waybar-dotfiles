@@ -21,7 +21,7 @@ To install these dotfiles, follow these steps:
 
 1.  First, ensure all necessary dependencies are installed on your system. For Arch Linux, you can install many of them with:
     ```bash
-    yay -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship grim slurp swappy jq pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd bluez bluez-utils blueman fish pacman-contrib
+    yay -S hyprland polkit-kde-agent waybar rofi swaync hyprlock wlogout hyprpaper kitty nautilus btop fastfetch starship grim slurp swappy jq pavucontrol playerctl brightnessctl networkmanager-applet ttf-jetbrains-mono-nerd noto-fonts-cjk  bluez bluez-utils blueman fish pacman-contrib
     ```
     You may also need additional packages depending on your specific setup, or some package names might differ slightly.
 2.  Clone this repository:
